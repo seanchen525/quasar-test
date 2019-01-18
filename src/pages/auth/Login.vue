@@ -36,7 +36,7 @@ export default {
       }
       try {
         await this.$store.dispatch('user/login', loginForm)
-        console.log(this.$store.user.username + '---' + this.$store.user.password)
+        console.log(this.$store.state.user.username + '---' + this.$store.state.user.password)
       } catch (err) {
         console.log(err)
       }

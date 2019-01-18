@@ -11,6 +11,11 @@ export function someMutation (state) {
 //   }
 // }
 
-export const SET_TOKEN = (state, data) => {
+export const SET_TOKEN = (state, token) => {
+  state.token = token
+}
 
+export const SET_USER = (state, userInfo) => {
+  state.username = userInfo.username
+  state.password = userInfo.password
 }
